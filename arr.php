@@ -25,7 +25,7 @@ class Arr
 
 		foreach ( $array as $key => $_ ) {
 
-			if ( !in_array( $key, $keyWhitelist ) ) {
+			if ( !in_array( $key, $keyWhitelist, true ) ) {
 				unset( $array[$key] );
 			}
 
